@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% unless params[:action] == 'index' && params[:controller] == 'flats' %>
+      <h1>NAVBAR</h1>
+    <% end %>
     <%= yield %>
   </body>
 </html>
